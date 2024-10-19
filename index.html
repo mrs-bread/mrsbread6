@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title> Calc </title>
+</head>
+
+<body>
+    <fieldset>
+    <form>
+        <p> Количество: </p>
+        <input name="amount" type="number"> 
+        <br>
+
+        <p> Вид товара: </p>
+        <div id="myradios">
+            <label><input type="radio" name="goods" value="g_1" checked="checked"> Ананас (1 шт) </label>
+            <label><input type="radio" name="goods" value="g_2"> Мандарины (1 кг) </label>
+            <label><input type="radio" name="goods" value="g_3"> Киви (1 кг) </label>
+            <label><input type="radio" name="goods" value="g_4"> Груша (1 кг) </label>
+            <label><input type="radio" name="goods" value="g_5"> Вишня (1 кг) </label>
+        </div> 
+        <br>
+         
+        <select name="g_options" id="goods_options">
+            <option value="option_1"> Пакет не нужен </option>
+            <option value="option_2"> Обычный пакет </option>
+            <option value="option_3"> Бумажный пакет </option>
+        </select>
+        <br>
+
+        <div id="checkboxes">
+            <label><input type="checkbox" name="property_1"/> Подарочная упаковка </label>
+            <label><input type="checkbox" name="property_2"/> Доставка </label>
+            <label><input type="checkbox" name="property_3"/> Упаковка для длительной транспортировки </label>
+        </div>
+        <br>
+
+    </form>
+
+    <div id="result">-Итого-</div>
+    </fieldset>
+</body>
+</html>
